@@ -28,8 +28,8 @@ header {
   gap: 0.8rem;
   position: absolute;
   left: 0px;
-  bottom: 3rem;
   font-size: 24px;
+  bottom: 12rem;
 }
 
 .header__socials::after {
@@ -58,7 +58,7 @@ header {
 .scroll__down {
   position: absolute;
   right: -2.3rem;
-  bottom: 5rem;
+  bottom: 14rem;
   transform: rotate(90deg);
   font-weight: 300;
   font-size: 0.9rem;
@@ -67,9 +67,20 @@ header {
 /* MEDIUM DEVICES */
 
 @media screen and (max-width: 1024px) {
+  .header {
+    height: 68vh;
+  }
 }
 
 /* SMALL DEVICES */
 
 @media screen and (max-width: 600px) {
+  .header {
+    height: 100vh;
+  }
+
+  .header__socials,
+  .scroll__down {
+    display: none;
+  }
 }
