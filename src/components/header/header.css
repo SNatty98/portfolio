@@ -1,6 +1,6 @@
 header {
   height: 130vh;
-  padding-top: 7rem;
+  padding-top: 2rem;
   overflow: hidden;
 }
 
@@ -43,10 +43,9 @@ header {
 
 .me {
   background: linear-gradient(var(--color-primary), transparent);
-  width: 22rem;
   height: 30rem;
   position: absolute;
-  left: calc(50% - 11rem);
+  left: 21rem;
   margin-top: 4rem;
   border-radius: 12rem 12rem 0 0;
   overflow: hidden;
@@ -79,17 +78,32 @@ header {
   .header {
     height: 68vh;
   }
-}
+
+  .me {
+    left: 13.5rem;
+  }
+
+  
 
 /* SMALL DEVICES */
 
 @media screen and (max-width: 600px) {
-  .header {
-    height: 100vh;
-  }
 
   .header__socials,
   .scroll__down {
     display: none;
   }
+
+  .header__container h5,h1 {
+    margin-left: 5rem;
+  }
+
+  .cta a:first-child {
+    margin-left: 5rem;
+  }
+
+  .me {
+    left: 5rem;
+  }
+} 
 }

@@ -1,0 +1,40 @@
+.experience__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.experience__container > div {
+  background: var(--color-bg-variant);
+  padding-top: 2.4rem;
+  padding-bottom: 5rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  width: 400px;
+  height: 400px;
+  margin-left: 2rem;
+  transition: var(--transition);
+}
+
+.experience__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 2rem;
+  margin-left: 2.5rem;
+}
+
+.experience__frontend h3 {
+  margin-top: 0;
+  margin-left: 40px;
+}
+
+.experience__backend h3 {
+  margin-top: 0;
+  margin-left: 40px;
+}
+
+.experience__container > div:hover {
+  background: transparent;
+  border-color: var(--color-primary-variant);
+  cursor: default;
+}
