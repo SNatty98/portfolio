@@ -1,0 +1,24 @@
+.footer {
+  height: 3.5rem;
+  background-color: var(--color-primary-variant);
+  margin-top: 3rem;
+  margin-bottom: 0px;
+  display: flex;
+}
+
+.social__icons {
+    margin-top: 0.8rem;
+    margin-left: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.social__icons a {
+    font-size: 24px;
+    color: var(--color-white);
+}
+
+.social__icons a:hover {
+    color: var(--color-bg);
+    transition: var(--transition);
+}
